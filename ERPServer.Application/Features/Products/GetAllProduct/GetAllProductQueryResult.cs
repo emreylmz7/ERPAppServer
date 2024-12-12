@@ -1,8 +1,7 @@
 ﻿using ERPServer.Domain.Abstractions;
 
-namespace ERPServer.Domain.Dtos.ProductDtos;
-
-public class ResultProductDto : BaseEntity
+namespace ERPServer.Application.Features.Products.GetAllProduct;
+public class GetAllProductQueryResult : BaseEntity
 {
     public string SKU { get; set; } = string.Empty;
     public string Name { get; set; } = string.Empty;

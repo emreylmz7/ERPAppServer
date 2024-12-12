@@ -18,5 +18,7 @@ public sealed class Customer : Entity
     public string Status { get; set; } = string.Empty;             // Müşterinin durumu (Aktif, Pasif vb.)
     public DateTime CreatedAt { get; set; } = DateTime.Now;   // Müşterinin oluşturulma tarihi
     public string CustomerGroup { get; set; } = string.Empty;          // Müşteri grubu (VIP, Normal vb.)
-    public Guid UserId { get; set; } = Guid.Empty;
+    public Guid UserId { get; set; } = Guid.Empty;      
+    public List<Address>? Addresses { get; set; } 
+    public List<Order>? Orders { get; set; }
 }

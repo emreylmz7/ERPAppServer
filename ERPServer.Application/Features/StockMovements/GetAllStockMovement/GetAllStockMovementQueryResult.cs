@@ -1,9 +1,6 @@
-﻿using ERPServer.Domain.Abstractions;
-using ERPServer.Domain.Enums;
+﻿namespace ERPServer.Application.Features.StockMovements.GetAllStockMovement;
 
-namespace ERPServer.Domain.Dtos.StockMovementDtos;
-
-public class ResultStockMovementDto : BaseEntity
+public class GetAllStockMovementQueryResult
 {
     public Guid ProductId { get; set; }
     public string ProductName { get; set; } = string.Empty;
